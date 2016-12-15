@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1><!--se toma una variable de la view-->
+    <ul>
+        {% for item in products %}
+        <!--<li> <a href="{% url 'productos.views.productodetalle' pk=item.pk}">{{item.id}}</a> </li>-->
+            <li> {{item.producto}} </li>
+            <li> {{item.precio}} </li>
+            <li> {{item.description}} </li>
+        <br/>
+        {% endfor %}
+    </ul>
+</body>
+</html>

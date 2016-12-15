@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1><!--se toma una variable de la view-->
+    <ul>
+        {% for item in cliente %}
+            <li> {{item.documento}} </li>
+            <li> {{item.nombre}} </li>
+            <li> {{item.detalle}} </li>
+        <br/>
+        {% endfor %}
+    </ul>
+</body>
+</html>

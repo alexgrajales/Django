@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="CreateProducto.css">&lt;!&ndash;para acceder a la hoja de estilos en otra ubicaciòn&ndash;&gt;-->
+    ♠<title>Title</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1><!--se toma una variable de la view-->
+    <form class="formulario" method="POST">
+            <!--{% csrt_token %}-->
+            <!--{{ form.as_p }}-->
+          <div class="col1">
+            <label for="nombre">Nombre Producto</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="precio">Precio</label>
+            <input type="text" required id="precio" name="precio"/>
+          </div>
+          <div class="col2">
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="7"></textarea>
+            <input type="submit" value="Enviar" class="button"/>
+          </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+}
+
+.nombre strong {
+  display: block;
+}
+
+.precio strong {
+  display: block;
+}
+
+.descripcion strong {
+  display: block;
+}

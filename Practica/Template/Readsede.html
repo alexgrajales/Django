@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{titulo}}</h1><!--se toma una variable de la view-->
+    <ul>
+        {% for item in sede %}
+            <li> {{item.sede}} </li>
+            <li> {{item.direccion}} </li>
+        <br/>
+        {% endfor %}
+    </ul>
+</body>
+</html>
